@@ -76,7 +76,7 @@ def verProfesionales(base_url, user_id):
                 print()
         if existe:
             while True:
-                reservar = input("Querés reservar algun profesional? (si/no): ")
+                reservar = input("Querés reservar un turno con algun profesional? (si/no): ")
                 if reservar == "si":
                     registrarReserva(user_id, prof)
                     break
@@ -311,7 +311,7 @@ def main():
                             opcion = int(input("Elegi la opcion que desees realizar: "))
                             if opcion == 1:
                                 while True:
-                                    print("MODIFICAR PERFIL")
+                                    print("---- MODIFICAR PERFIL ----")
                                     print("- precio")
                                     print("- direccion")
                                     print("- telefono")
