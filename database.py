@@ -255,10 +255,8 @@ def verCitasProf(nombre_prof):
 #                 lista_profesionales.append(profesional)
 #             except Exception as e:
 #                 print(f"Error al crear Profesional con data {data}: {e}")
-#         else:
-#             print(f"Data inválida: {data}")
-#     print(lista_profesionales)
-#     return lista_profesionales
+
+
 
 
 
