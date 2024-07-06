@@ -155,7 +155,7 @@ def EsProfesional(base_url, user_id):
         print(f"Error al verificar categoría: {e}")
         return None
 
-#verProfesionales(url)
+
 
 def realizar_login(base_url, categoria, userid, contrasenia):
     try:
