@@ -18,6 +18,7 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.show()
 
     print ()
+    
     # 2. Valor del servicio según cada oferente
     plt.figure(figsize=(12, 8))
     sns.barplot(x='nombre', y='precio', hue='servicios', data=df_profesionales)
@@ -29,6 +30,7 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.show()
 
     print ()
+    
     # 3. Distribución de precios por servicio en un diagrama de bogotes
     plt.figure(figsize=(12, 8))
     sns.boxplot(x='servicios', y='precio', data=df_profesionales)
