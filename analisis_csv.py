@@ -41,6 +41,7 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.show()
 
     print ()
+    
     # 4. grafico de torta de la distribución de servicios
     plt.figure(figsize=(10, 6))
     df_profesionales['servicios'].value_counts().plot(kind='pie', autopct='%1.1f%%', startangle=140)
