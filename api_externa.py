@@ -1,7 +1,7 @@
 import requests
 import json
 
-
+api_url = 'https://100k-faces.glitch.me/'
 
 def obtener_foto():
     try:
