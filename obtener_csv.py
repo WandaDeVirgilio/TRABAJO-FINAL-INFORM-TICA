@@ -10,7 +10,6 @@ cursor = conexion.cursor()
 cursor.execute("SELECT precio, servicios, nombre FROM profesionales")
 data = cursor.fetchall()
 
-# obtener los nombres de las columnas
 columnas = ['precio', 'servicios', 'nombre']
 
 # crear un dataframe con los datos obtenidos
