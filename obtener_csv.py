@@ -11,8 +11,6 @@ cursor.execute("SELECT precio, servicios, nombre FROM profesionales")
 data = cursor.fetchall()
 
 columnas = ['precio', 'servicios', 'nombre']
-
-# crear un dataframe con los datos obtenidos
 df = pd.DataFrame(data, columns=columnas)
 
 # guarda lo anterior en un archivo csv
