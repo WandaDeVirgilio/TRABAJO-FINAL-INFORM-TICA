@@ -71,6 +71,7 @@ def verProfesionales(base_url, user_id):
                 print("PRECIO", pro.precio)
                 direccion = pro.direccion.replace(' ', '+')
                 print("DIRECCION: ", "https://www.google.com.ar/maps/place/" + direccion)
+                print(f"MANDARLE MENSAJE: https://api.whatsapp.com/send/?phone={pro.telefono}&text&type=phone_number&app_absent=0")
                 foto = obtener_foto()
                 print(foto)
                 print()
