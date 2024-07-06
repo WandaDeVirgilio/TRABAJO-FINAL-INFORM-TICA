@@ -23,7 +23,7 @@ def agregar_profesional(ruta_b,nombre,userid,contraseña,servicios,precio,direcc
     conexion=sqlite3.connect(ruta_b) 
     cursor=conexion.cursor() 
     sentenciasql= "INSERT INTO profesionales VALUES('"+nombre+"','"+userid+"','"+contraseña+"','"+servicios+"',"+str(precio)+",'"+direccion+"',"+str(telefono)+")" 
-    cursor.execute(sentenciasql) #aca ve si hay error 
+    cursor.execute(sentenciasql) 
     conexion.commit()   #si hay error no llena la tabla. 
     conexion.close() 
  
