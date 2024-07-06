@@ -19,6 +19,7 @@ def crear_tablas(ruta_b):
 
 existe = crear_tablas(ruta_base) 
 
+
 def agregar_profesional(ruta_b,nombre,userid,contraseña,servicios,precio,direccion,telefono): 
     conexion=sqlite3.connect(ruta_b) 
     cursor=conexion.cursor() 
@@ -54,7 +55,8 @@ def insertar_lista_contratista(ruta_b,lista):
     cursor.executemany(sentenciasql,lista) 
     conexion.commit()   
     conexion.close() 
-    
+
+
 profesionales = [
     ("Silvia Gonzalez", "silvigonzalez","hola","peluqueria",1000,"Navarro 2887,CABA,Buenos Aires",1132598326),
     ("Ernesto Rodriguez", "ert","234","maquillaje",100,"Pedernera 3215,CABA,Buenos Aires",1132598327),
