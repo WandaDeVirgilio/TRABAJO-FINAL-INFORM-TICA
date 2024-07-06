@@ -12,8 +12,6 @@ data = cursor.fetchall()
 
 columnas = ['precio', 'servicios', 'nombre']
 df = pd.DataFrame(data, columns=columnas)
-
-# guarda lo anterior en un archivo csv
 df.to_csv('profesionales.csv', index=False)
 
 conexion.close()
