@@ -132,7 +132,7 @@ def formatoFechaCorrecto(fecha):
         print(f"Error en el formato de fecha: {e}")
         return False
 
-# # Solicitamos la fecha al usuario
+
 # fecha = input("Escribe la fecha dd/mm/aaaa: ")
 # es_valida = formatoFechaCorrecto(fecha)
 
