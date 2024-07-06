@@ -76,7 +76,7 @@ def verProfesionales(base_url, user_id):
                 print()
         if existe:
             while True:
-                reservar = input("Queres reservar algun profesional? (si/no): ")
+                reservar = input("Querés reservar algun profesional? (si/no): ")
                 if reservar == "si":
                     registrarReserva(user_id, prof)
                     break
@@ -118,6 +118,7 @@ def registrarReserva(user_id, prof):
         print(f"Error en registrar reserva: {e}")
 
 
+
 def formatoFechaCorrecto(fecha):
     try:
         if fecha[2] != "/" or fecha[5] != "/":
@@ -131,7 +132,6 @@ def formatoFechaCorrecto(fecha):
     except Exception as e:
         print(f"Error en el formato de fecha: {e}")
         return False
-
 
 
 # es_valida = formatoFechaCorrecto(fecha)
@@ -154,7 +154,6 @@ def EsProfesional(base_url, user_id):
     except requests.RequestException as e:
         print(f"Error al verificar categoría: {e}")
         return None
-
 
 
 def realizar_login(base_url, categoria, userid, contrasenia):
@@ -335,6 +334,7 @@ def main():
                             print("Entrada inválida, debe ser un número")
     except Exception as e:
         print(f"Error en main: {e}")
+
 
 
 if __name__ == "__main__":
