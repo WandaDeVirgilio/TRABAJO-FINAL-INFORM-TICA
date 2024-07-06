@@ -54,9 +54,6 @@ def insertar_lista_contratista(ruta_b,lista):
     cursor.executemany(sentenciasql,lista) 
     conexion.commit()   
     conexion.close() 
-
-
-
     
 profesionales = [
     ("Silvia Gonzalez", "silvigonzalez","hola","peluqueria",1000,"Navarro 2887,CABA,Buenos Aires",1132598326),
@@ -97,9 +94,6 @@ if existe:
     insertar_lista_profesionales(ruta_base,profesionales) 
     insertar_lista_contratista(ruta_base,contratistas) 
 
-
-
- 
 def ver_profesionales(ruta_b): 
     conexion=sqlite3.connect(ruta_b) 
     cursor=conexion.cursor() 
