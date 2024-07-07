@@ -58,7 +58,7 @@ def verProfesionales(base_url,user_id):
                 prof.append(pro)
                 print ("NOMBRE:",pro.nombre)
                 print("SERVICIO:", pro.servicios)
-                print("PRECIO",pro.precio)
+                print("PRECIO:",pro.precio)
                 direccion=pro.direccion.replace(' ','+')
                 print("DIRECCION: ", "https://www.google.com.ar/maps/place/"+direccion)
                 foto = obtener_foto()
