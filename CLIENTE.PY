@@ -8,7 +8,6 @@ class Usuario:
         self.nombre = nombre
         self.user_id = userid
         self.__password = contraseña
-        # self.localidad = localidad
     def Saludar(self):
         print("Hola,",self.nombre,"bienvenido")
         
