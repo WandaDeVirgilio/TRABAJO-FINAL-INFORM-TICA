@@ -187,7 +187,6 @@ def insertarReserva(user_id,nombre_prof,fecha):
     conexion=sqlite3.connect("base1.db") 
     cursor=conexion.cursor() 
     cursor.execute("INSERT INTO reservas VALUES(?,?,?)", (user_id, nombre_prof, fecha))
-    # cursor.executemany(sentenciasql,lista) 
     conexion.commit()   
     conexion.close() 
 
