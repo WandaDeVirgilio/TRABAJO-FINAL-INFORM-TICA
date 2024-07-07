@@ -229,17 +229,3 @@ def verCitasProf(nombre_prof):
 
     return diccionario_citas_prof
 
-
-# def obtener_profesionales():
-#  
-#     cursor.execute("SELECT userid, contraseña, nombre, servicios, precio FROM profesionales")
-#     profesionales_data = cursor.fetchall()
-#     conn.close()
-
-
-
-
-
-
-
-
