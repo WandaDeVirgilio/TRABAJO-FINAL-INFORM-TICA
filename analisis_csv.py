@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
 df_profesionales = pd.read_csv('profesionales.csv')
 
 if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.columns and 'nombre' in df_profesionales.columns:
