@@ -236,13 +236,12 @@ def verCitasProf(nombre_prof):
 #     cursor.execute("SELECT userid, contraseña, nombre, servicios, precio FROM profesionales")
 #     profesionales_data = cursor.fetchall()
 #     conn.close()
-#     lista_profesionales = []
-#     for data in profesionales_data:
+#   ta:
 #         if len(data) == 5:
 #             try:
 #                 user_id, contraseña, nombre, servicio, precio = data
 #                 profesional = Profesional(user_id, contraseña, nombre, servicio, precio)
-#                 lista_profesionales.append(profesional)
+
 
 
 
