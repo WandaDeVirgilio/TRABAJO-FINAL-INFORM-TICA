@@ -26,7 +26,6 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.xticks(rotation=45)
     plt.legend(title='Servicio')
     plt.show()
-
     print ()
     
     # 3. Distribución de precios por servicio en un diagrama de bogotes
