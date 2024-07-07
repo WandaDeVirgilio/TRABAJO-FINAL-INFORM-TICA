@@ -55,7 +55,6 @@ def verProfesionales(base_url,user_id):
         for profesional in rows:
             if servicio == profesional["servicios"]:
                 existe = True
-                # pro=Profesional(profesional["nombre"],profesional["userid"],profesional["contraseña"],profesional["telefono"],profesional["direccion"],"servicios",profesional["precio"])
                 pro=Profesional(profesional["nombre"],profesional["userid"], profesional["contraseña"], profesional["servicios"], profesional["precio"], profesional["direccion"], profesional["telefono"])
                 prof.append(pro)
                 print ("NOMBRE:",pro.nombre)
