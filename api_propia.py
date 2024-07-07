@@ -51,7 +51,6 @@ def api_cambiar_contrasena():
     else:
         return jsonify({"message": "Contraseña actual incorrecta"}), 400
 
-
 @app.route("/configuracion/eliminar_cuenta", methods=["DELETE"])
 def api_eliminar_cuenta():
     data = request.json
@@ -64,7 +63,6 @@ def api_eliminar_cuenta():
     else:
         return jsonify({"message": "Contraseña incorrecta"}), 400
     
-
 @app.route("/citas/contratista/<user_id>", methods=["GET"])
 def get_citas_contratista(user_id):
     citas = verCitasContratista(user_id)
