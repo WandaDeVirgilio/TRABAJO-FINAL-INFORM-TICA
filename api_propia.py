@@ -80,7 +80,6 @@ def get_citas_prof(nombre_prof):
         return jsonify({"message": nombre_prof}), 404
 
 
-
 if __name__ == "__main__":
     crear_tablas('base1.db') 
     app.run(debug=True, port=4000)
