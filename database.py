@@ -152,12 +152,7 @@ def login(categoria,userid, contrasenia):
 def editar_perfil(user_id, campo, nuevo_valor):
     conn = sqlite3.connect("base1.db")
     cursor = conn.cursor()
-    if campo == "precio":
-        cursor.execute("UPDATE profesionales SET precio = ? WHERE userid = ?", (nuevo_valor, user_id))
-    elif campo == "direccion":
-        cursor.execute("UPDATE profesionales SET direccion = ? WHERE userid = ?", (nuevo_valor, user_id))
-    elif campo == "telefono":
-        cursor.execute("UPDATE profesionales SET telefono = ? WHERE userid = ?", (nuevo_valor, user_id))
+    cursor.execute(f"UPDATE profesionales SET {campo} = ? WHERE userid = ?", (nuevo_valor, user_id))
     conn.commit()
     conn.close()
 
