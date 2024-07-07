@@ -231,8 +231,7 @@ def verCitasProf(nombre_prof):
 
 
 # def obtener_profesionales():
-#     conn = sqlite3.connect("base1.db")
-#     cursor = conn.cursor()
+#  
 #     cursor.execute("SELECT userid, contraseña, nombre, servicios, precio FROM profesionales")
 #     profesionales_data = cursor.fetchall()
 #     conn.close()
