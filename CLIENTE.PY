@@ -254,13 +254,13 @@ def main():
             if categoria=="contratistas":
                 while True:
                     print()
-                    print("MENU PRINCIPAL")
+                    print("MENÚ PRINCIPAL")
                     print("Opciones:")
                     print("1. Ver profesionales")
-                    print("2. ver citas proximas")
+                    print("2. Ver citas proximas")
                     print("3. Salir")
                     print()
-                    opcion=int(input("Elegi la opcion que desees realizar: "))
+                    opcion=int(input("Elegí la opción que desees realizar: "))
                     if opcion==1:
                         verProfesionales(url,userid)
                     elif opcion==2:
@@ -269,18 +269,18 @@ def main():
                     elif opcion==3:
                         break
                     else:
-                        print("Opciones no validas")
+                        print("Opciones no válidas")
             elif categoria=="profesionales":
                 while True:
                     print()
                     print("MENU PRINCIPAL")
                     print("Opciones:")
                     print("1. Editar Perfil")
-                    print("2. Configuracion")
+                    print("2. Configuración")
                     print("3. Ver citas")
-                    print("4. Cerrar Sesion")
+                    print("4. Cerrar Sesión")
                     print()
-                    opcion=int(input("Elegi la opcion que desees realizar: "))
+                    opcion=int(input("Elegí la opción que desees realizar: "))
                     if opcion==1:
                         while True:
                             print("MODIFICAR PERFIL")
@@ -289,33 +289,33 @@ def main():
                             print("- telefono")
                             campo= input("Ingresa que queres modificar: ")
                             if campo=="precio":
-                                nuevo_valor=input("ingresa el nuevo precio: ")
+                                nuevo_valor=input("Ingresa el nuevo precio: ")
                                 break
                             elif campo=="direccion":
-                                nuevo_valor=input("ingresa la nueva direccion: ")
+                                nuevo_valor=input("Ingresa la nueva dirección: ")
                                 break
                             elif campo=="telefono":
-                                nuevo_valor=input("ingresa el nuevo telefono: ")
+                                nuevo_valor=input("Ingresa el nuevo teléfono: ")
                                 break
                             else:
-                                print("ingresa una opcion valida")
+                                print("Ingresa una opción válida")
                         actualizar_perfil(url,userid,campo,nuevo_valor)
                     elif opcion==2:
-                        print("-----CONFIGURACION-----")
-                        opcion_configuracion = int(input("Elegi la opcion que desees realizar: \n1. Modificar contraseña\n2. Eliminar cuenta\n"))
+                        print("-----CONFIGURACIÓN-----")
+                        opcion_configuracion = int(input("Elegí la opción que desees realizar: \n1. Modificar contraseña\n2. Eliminar cuenta\n"))
                         if opcion_configuracion==1:
                             cambiar_contraseña(userid,contrasenia)
                         elif opcion_configuracion==2:
                             eliminar_cuenta(userid,contrasenia)
                             break
                         else:
-                            print("opcion no valida")
+                            print("Opción no válida")
                     elif opcion==3:
                         obtener_citas_profesional(url,userid)
                     elif opcion==4:
                         break
                     else:
-                        print("Opcion no valida")
+                        print("Opción no válida")
 main()
 
 
