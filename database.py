@@ -25,7 +25,7 @@ def agregar_profesional(ruta_b,nombre,userid,contraseña,servicios,precio,direcc
     cursor=conexion.cursor() 
     sentenciasql= "INSERT INTO profesionales VALUES('"+nombre+"','"+userid+"','"+contraseña+"','"+servicios+"',"+str(precio)+",'"+direccion+"',"+str(telefono)+")" 
     cursor.execute(sentenciasql) 
-    conexion.commit()   #si hay error no llena la tabla. 
+    conexion.commit()   
     conexion.close() 
  
 def agregar_contratista(ruta_b,userid,contraseña,direccion): 
