@@ -66,7 +66,6 @@ def verProfesionales(base_url,user_id):
                 print(foto)
                 print(f"MANDARLE MENSAJE: https://api.whatsapp.com/send/?phone={pro.telefono}&text&type=phone_number&app_absent=0")
                 print()
-        # print(prof[1].nombre)
         if existe:
             reservar=input("Queres reservar algun profesional? (si/no): ")
         else:
