@@ -8,6 +8,7 @@ class Usuario:
         self.nombre = nombre
         self.user_id = userid
         self.__password = contraseña
+        # self.localidad = localidad
     def Saludar(self):
         print("Hola,",self.nombre,"bienvenido")
         
@@ -31,8 +32,6 @@ class Profesional(Usuario):
 
 url = "http://127.0.0.1:4000"
 
-
-
 def verContratistas(base_url):
     url = f"{base_url}/contratistas"
     response = requests.get(url)
@@ -55,6 +54,7 @@ def verProfesionales(base_url,user_id):
         for profesional in rows:
             if servicio == profesional["servicios"]:
                 existe = True
+                # pro=Profesional(profesional["nombre"],profesional["userid"],profesional["contraseña"],profesional["telefono"],profesional["direccion"],"servicios",profesional["precio"])
                 pro=Profesional(profesional["nombre"],profesional["userid"], profesional["contraseña"], profesional["servicios"], profesional["precio"], profesional["direccion"], profesional["telefono"])
                 prof.append(pro)
                 print ("NOMBRE:",pro.nombre)
@@ -63,9 +63,10 @@ def verProfesionales(base_url,user_id):
                 direccion=pro.direccion.replace(' ','+')
                 print("DIRECCION: ", "https://www.google.com.ar/maps/place/"+direccion)
                 foto = obtener_foto()
-                print(foto)
+                print("FOTO: ",foto)
                 print(f"MANDARLE MENSAJE: https://api.whatsapp.com/send/?phone={pro.telefono}&text&type=phone_number&app_absent=0")
                 print()
+        # print(prof[1].nombre)
         if existe:
             reservar=input("Queres reservar algun profesional? (si/no): ")
         else:
@@ -225,7 +226,7 @@ def obtener_citas_contratista(base_url, user_id):
             print("Profesional: ", cita["nombre_prof"])
             print("Fecha: ", cita["fecha"])
     else:
-        print("Error al obtener citas del contratista")
+        print("No tenes citas disponibles")
 
 
 def obtener_citas_profesional(base_url,nombre_prof):
@@ -236,7 +237,7 @@ def obtener_citas_profesional(base_url,nombre_prof):
             print("Contratista: ",citas["userid"])
             print("Fecha: ",citas["fecha"])
     else:
-        return None
+        print("No tenes citas disponibles")
 
 
 
@@ -316,9 +317,6 @@ def main():
                     else:
                         print("Opcion no valida")
 main()
-
-
-        
 
 
 
