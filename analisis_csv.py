@@ -15,7 +15,6 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.ylabel('Precio promedio')
     plt.xticks(rotation=45)
     plt.show()
-
     print ()
     
     # 2. Valor del servicio según cada oferente
