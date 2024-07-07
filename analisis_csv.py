@@ -36,7 +36,6 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.ylabel('Precio')
     plt.xticks(rotation=45)
     plt.show()
-
     print ()
     
     # 4. grafico de torta de la distribución de servicios
