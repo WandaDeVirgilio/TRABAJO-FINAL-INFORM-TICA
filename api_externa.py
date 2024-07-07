@@ -13,4 +13,5 @@ def obtener_foto():
     except Exception as e:
         print(f"Error en la solicitud a la API: {e}")
     return None
+    
 obtener_foto()
