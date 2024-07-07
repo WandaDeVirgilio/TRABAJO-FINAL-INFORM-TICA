@@ -37,7 +37,7 @@ def agregar_contratista(ruta_b,userid,contraseña,direccion):
     conexion.close() 
     
 if(existe):
-    agregar_profesional(ruta_base,"Lucila Katz","lkatz","hola123","maquillaje",1000,"2374 Cuenca, CABA, Buenos Aires",1132598325) #esto despues lo hacemos con inputs 
+    agregar_profesional(ruta_base,"Lucila Katz","lkatz","hola123","maquillaje",1000,"2374 Cuenca, CABA, Buenos Aires",1132598325) 
     agregar_contratista(ruta_base,"wanda","perro123","2344 Arregui, CABA, Buenos Aires ") 
  
 def insertar_lista_profesionales(ruta_b,lista): 
