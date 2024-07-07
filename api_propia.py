@@ -17,7 +17,6 @@ def get_profesionales():
     profesionales = ver_profesionales('base1.db')
     return jsonify(profesionales)
 
-
 @app.route("/login", methods=["POST"])
 def login_api():
     data = request.json
