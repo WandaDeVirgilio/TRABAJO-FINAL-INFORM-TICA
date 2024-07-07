@@ -45,6 +45,7 @@ if 'servicios' in df_profesionales.columns and 'precio' in df_profesionales.colu
     plt.ylabel('')
     plt.show()
     print ()
+    
     # 5. Gráfico de barras de la cantidad de servicios ofrecidos por los profesionales
     servicios_count = df_profesionales['servicios'].value_counts()
     plt.figure(figsize=(12, 6))
